@@ -1,0 +1,11 @@
+package com.telegram_bot.global.enums.operation;
+
+public enum Operation {
+    CANCEL_BOOKING
+    , BOOKING
+    , DAY_OF_WEEK_SELECTION
+    , CANCEL_PARTNER_SEARCH_REQUEST
+    , SELECT_PARTNER_SEARCH_REQUEST
+    , SELECT_TIME_PARTNER_SEARCH_REQUEST
+    , SELECT_DAY_OF_WEEK_PARTNER_SEARCH_REQUEST
+}
