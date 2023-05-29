@@ -26,7 +26,7 @@ public class MenuPartnerCreatorImpl implements MenuPartnerCreator {
             List<InlineKeyboardButton> row2 = new ArrayList<>();
 
             InlineKeyboardButton inlineKeyboardButton =
-                    createInlineKeyboardButton(formTextPartnerSearchRequestInfo(partnerSearchRequest), "");
+                    createInlineKeyboardButton(formTextPartnerSearchRequestInfo(partnerSearchRequest), "/as");
 
             InlineKeyboardButton inlineKeyboardButton2 =
                     createInlineKeyboardButton(

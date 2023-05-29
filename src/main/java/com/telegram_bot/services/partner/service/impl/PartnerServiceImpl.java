@@ -48,8 +48,8 @@ public class PartnerServiceImpl implements PartnerService {
                 partnerSearchRequest.setDateTimeDispatch(LocalDateTime.now());
                 partnerSearchRequest.setDateTimeChangeStatus(LocalDateTime.now());
                 userEntity.addPartnerSearchRequest(partnerSearchRequest);
-                userService.saveUser(userEntity);
                 crudPartnerSearchRequestService.save(partnerSearchRequest);
+                userService.saveUser(userEntity);
             }else throw new IllegalArgumentException("Booking is not exist!");
         }catch (Exception e){
             log.info(e.toString());

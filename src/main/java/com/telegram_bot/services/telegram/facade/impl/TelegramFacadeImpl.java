@@ -8,8 +8,6 @@ import com.telegram_bot.global.enums.menu.SignUpMenu;
 import com.telegram_bot.global.enums.menu.StartMenu;
 import com.telegram_bot.global.enums.operation.Operation;
 import com.telegram_bot.global.util.service.DateTimeUtil;
-import com.telegram_bot.services.booking.exceptions.ExceedingLimitException;
-import com.telegram_bot.services.booking.exceptions.TimeIsBusyException;
 import com.telegram_bot.services.booking.model.entity.Booking;
 import com.telegram_bot.services.booking.service.BookingService;
 import com.telegram_bot.services.menu.service.main_menu.MenuCreatorService;
