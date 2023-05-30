@@ -81,7 +81,6 @@ public class PartnerServiceImpl implements PartnerService {
         PartnerSearchRequest partnerSearchRequest = crudPartnerSearchRequestService.getEntityById(id).orElseThrow();
         if (Optional.ofNullable(partnerSearchRequest.getPartner()).isEmpty()){
             crudPartnerSearchRequestService.delete(partnerSearchRequest);
-            crudPartnerSearchRequestService.save(partnerSearchRequest);
         }
     }
 }

@@ -28,15 +28,15 @@ public class PartnerSearchRequest {
     @Enumerated(value = EnumType.STRING)
     private ApplicationStatus applicationStatus;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "creator_id", referencedColumnName = "id")
     private UserEntity creator;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "partner_id", referencedColumnName = "id")
     private UserEntity partner;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "booking_id", referencedColumnName = "id")
     private Booking booking;
 

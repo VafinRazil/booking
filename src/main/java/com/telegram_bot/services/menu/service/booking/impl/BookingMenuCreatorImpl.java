@@ -1,6 +1,7 @@
 package com.telegram_bot.services.menu.service.booking.impl;
 
 import com.telegram_bot.global.enums.menu.BookingsMenu;
+import com.telegram_bot.global.enums.operation.Operation;
 import com.telegram_bot.services.booking.model.entity.Booking;
 import com.telegram_bot.services.menu.service.booking.BookingMenuCreator;
 import com.telegram_bot.services.user.model.entity.UserEntity;
@@ -54,7 +55,7 @@ public class BookingMenuCreatorImpl implements BookingMenuCreator {
     }
 
     private String formCallbackDataForCancel(Long id){
-        return String.format("%s&%s", BookingsMenu.CANCEL.name(), id);
+        return String.format("%s&%s", Operation.CANCEL_BOOKING.name(), id);
     }
 
     private UserEntity getPartner(Booking booking, UserEntity reqOwner){
